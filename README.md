@@ -67,7 +67,7 @@ $ sudo git clone --depth 1 -b ${TAGVER} \
     ${TAGVERNUM}-microsoft-standard \
   && cd ${TAGVERNUM}-microsoft-standard
 
-$ sudo wget -O .config https://github.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf/raw/main/${TAGVER}/config-${WSL_DISTRO_NAME} \
+$ sudo wget -O .config https://raw.githubusercontent.com/PINTO0309/wsl2_linux_kernel_usbcam_enable_conf/raw/main/${TAGVER}/config-${WSL_DISTRO_NAME} \
   && sudo chmod 777 .config \
   && sudo make clean
 
