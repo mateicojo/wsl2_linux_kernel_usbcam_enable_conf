@@ -1,7 +1,7 @@
 # fixed in this fork:
 A couple missing lines that needed to be updated for other distributions
 
-Fixed the config file that used to get the whole github page as .html instead of the text content
+Fixed the line that used to get the whole github html page instead of the raw content for the config file 
 
 # wsl2_linux_kernel_usbcam_enable_conf
 Configuration file to build the kernel to access the USB camera connected to the host PC using USBIP from inside the WSL2.
