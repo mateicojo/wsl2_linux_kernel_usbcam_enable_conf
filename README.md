@@ -123,7 +123,7 @@ $ sudo git clone \
     ${TAGVERNUM}-microsoft-standard \
   && cd ${TAGVERNUM}-microsoft-standard
 ```
-does not work for you, try manually pasting the path to the directory corresponding to your distribution:
+does not work for you, try manually pasting the path to the directory corresponding to your distribution from this repo:
 https://github.com/microsoft/WSL2-Linux-Kernel.git
 
 ```bash
