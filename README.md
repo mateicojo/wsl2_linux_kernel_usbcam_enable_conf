@@ -3,6 +3,8 @@ A couple missing lines that needed to be updated for other distributions
 
 Fixed the line that used to get the whole github html page instead of the raw content for the config file 
 
+Old version didn't use to get the right version number 
+
 # wsl2_linux_kernel_usbcam_enable_conf
 Configuration file to build the kernel to access the USB camera connected to the host PC using USBIP from inside the WSL2.
 [Windows 11 + WSL2 + USB Camera + Serial](https://zenn.dev/pinto0309/articles/e1432253d29e30)
@@ -59,7 +61,7 @@ $ sudo apt install -y \
     guvcview python-is-python3 bc
 
 $ cd /usr/src
-$ TAGVERNUM=5.15.90.1 \
+$ TAGVERNUM=$(uname -r | awk -F'-' '{print $1}') \
   && TAGVER=linux-msft-wsl-${TAGVERNUM} \
   && WINUSERNAME=<windows username>
 $ sudo git clone --depth 1 -b ${TAGVER} \
