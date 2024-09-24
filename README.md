@@ -100,7 +100,7 @@ https://github.com/microsoft/WSL2-Linux-Kernel/tags
 On WSL2.
 ```bash
 $ cd /usr/src
-$ TAGVERNUM=(uname -r | awk -F'-' '{print $1}')
+$ TAGVERNUM=$(uname -r | awk -F'-' '{print $1}')
 $ TAGVER=linux-msft-wsl-${TAGVERNUM}
 $ sudo git clone \
     -b ${TAGVER} \
