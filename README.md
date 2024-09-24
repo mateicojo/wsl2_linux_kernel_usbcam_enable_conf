@@ -110,19 +110,6 @@ $ sudo git clone \
 $ sudo cp /proc/config.gz config.gz \
   && sudo gunzip config.gz \
   && sudo mv config .config
-```
-**Note: If the line 
-```bash
-$ sudo git clone \
-    -b ${TAGVER} \
-    https://github.com/microsoft/WSL2-Linux-Kernel.git \
-    ${TAGVERNUM}-microsoft-standard \
-  && cd ${TAGVERNUM}-microsoft-standard
-```
-does not work for you, try manually pasting the path to the directory corresponding to your distribution from this repo:
-https://github.com/microsoft/WSL2-Linux-Kernel.git
-
-```bash
 
 $ sudo make menuconfig
 
