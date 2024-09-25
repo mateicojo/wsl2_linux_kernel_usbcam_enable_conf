@@ -62,7 +62,7 @@ $ sudo git clone --depth 1 -b ${TAGVER} \
     ${TAGVERNUM}-microsoft-standard \
   && cd ${TAGVERNUM}-microsoft-standard
 
-$ sudo wget -O .config https://raw.githubusercontent.com/mateicojo/wsl2_linux_kernel_usbcam_enable_conf/refs/heads/main/config \
+$ sudo wget -O .config https://raw.githubusercontent.com/mateicojo/wsl2_linux_kernel_usbcam_enable_conf/refs/heads/fix-readme/config \
   && sudo chmod 777 .config \
   && sudo make clean
 
